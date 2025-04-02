@@ -19,7 +19,7 @@ jobs:
     if: github.event.label.name == 'rest-schema' && github.repository == 'github/docs'
     steps:
       - name: Check if this run was triggered by a member of the docs team
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@e7aeb8c663f696059ebb5f9ab1425ed2ef511bdb
         id: triggered-by-member
         with:
           github-token: ${{secrets.DOCUBOT_READORG_REPO_WORKFLOW_SCOPES}}
