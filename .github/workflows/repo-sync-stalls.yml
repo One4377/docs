@@ -18,7 +18,7 @@ jobs:
     steps:
       - if: github.repository == 'github/docs-internal' || github.repository == 'github/docs'
         name: Check if repo sync is stalled
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
         with:
           script: |
             let pulls;
